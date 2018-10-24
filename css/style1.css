@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+
+div{
+	background-color: blue;
+	margin: 5px;
+	padding: 5px;
+
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
