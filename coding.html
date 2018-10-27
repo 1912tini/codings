@@ -1,64 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Home|Madrid4 Refugees</title>
   <meta charset="UTF-8">
-  <link href="style1.css" rel="stylesheet" type="text/css" \> 
+  <title>Home|Diaspora</title>
+  <link rel="stylesheet" href="style1.css"  type="text/css" \>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: green;
+}
+
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
 </head>
 
 <body>
-
-<h2 bold>Adventure</h2>
-<hr>
-<img src= "photos/raphael-rychetsky.jpg" alt="journey" style="width:500px;height:600px;">
-
-<hr>
-
-<p>List .</p>
-<div>
-
-<ul> 
-
-<li>olive oil </li>
-<li>eggs </li>
-<li>potatoes </li>
-
-
-</ul>
-
 <ul>
-  <li>journey</li>
-  <li>sailing</li>
-  <li>crusing<li>
-
-</li>
+  <li><a href="#home" class="active">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#news">Blog</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
 </ul>
-</div>
-<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
 
-<table>
-  <tr> <! Table row -->
-  <td style="border: 1px solid black">x</td>
-  <td></td>
-  <td></td>
-  </tr>
-  
-  <tr>
-  <td style="border: 1px solid black">x</td>
-  <td style="border: 1px solid black">x</td>
-  <td style="border: 1px solid black">x</td>
-  </tr>
-  <tr>
-  <td></td>
-  <td></td>
-  <td style="border: 1px solid black">x</td>
-  </tr>
-  
-  
-  </table>
+<h2 bold>Nature</h2>
+<hr>
+<img src= "images/header.jpg" alt="nature" style="width:1000px;height:600px;">
+<hr>
+<h2>Personal info</h2>
+<p>Add your name and age below.</p>
 
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<br>
 
 <a href="https://github.com/1912tini?tab=repositories" target="_blank"> Go to Github...</a>
+
 </body>
 </html>
